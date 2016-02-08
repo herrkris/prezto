@@ -11,3 +11,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.zprezto/runcoms/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+#source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+source $HOME/.zprezto/runcoms/.iterm2_shell_integration.zsh
+
+export EDITOR='subl -w'
